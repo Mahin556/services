@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/root/services/systemd1/system_py.py", line 13, in <module>
+    webServer = HTTPServer((hostName, serverPort), MyServer)
+  File "/usr/lib64/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.9/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [21/May/2025 15:40:36] "GET /hello HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:40:42] "GET /hello HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:40:43] "GET /hello HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:40:44] "GET /hello HTTP/1.1" 200 -
