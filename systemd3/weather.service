@@ -4,7 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart= /bin/sh -c 'wall $(curl wttr.in?format=3)'
+ExecStart= /bin/sh -c 'curl wttr.in?format=3'
 
 [Install]
 WantedBy=default.target
