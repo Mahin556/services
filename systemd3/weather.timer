@@ -2,7 +2,9 @@
 Description=Weather Report Service
 
 [Timer]
+OnBootSec=5min 
 OnCalendar=*:*:0/30
+Persistent=true
 
 [Install]
 WantedBy=timer.target
