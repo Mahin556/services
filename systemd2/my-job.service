@@ -1,0 +1,6 @@
+[Unit]
+Description=Timer in replacment of cronjob
+
+[Service]
+ExecStart= /root/services/systemd2/timer.sh
+
