@@ -1,0 +1,8 @@
+[Unit]
+Description=Weather Report Service
+
+[Timer]
+OnCalendar=*:*:0/30
+
+[Install]
+WantedBy=timer.target
